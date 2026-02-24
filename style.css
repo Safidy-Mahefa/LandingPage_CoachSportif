@@ -319,7 +319,7 @@
       background-position: center top;
     }
 
-    /* .hero-bg::after {
+     .hero-bg::after {
       content: '';
       position: absolute;
       inset: 0;
@@ -329,7 +329,7 @@
         rgba(17,17,17,0.5) 50%,
         rgba(17,17,17,0.92) 100%
       );
-    } */
+    } 
 
     .hero-content {
       position: relative;
