@@ -1,19 +1,12 @@
     // ================================================
     // EMAILJS — CONFIGURATION
     // ================================================
-    /*
-      PERSONNALISER [EMAILJS_PUBLIC_KEY] :
-      1. Créez un compte sur https://www.emailjs.com
-      2. Créez un service email (Gmail, Outlook, etc.)
-      3. Créez un template et récupérez les IDs
-      4. Remplacez les valeurs ci-dessous
-    */
     (function() {
-      emailjs.init('[EMAILJS_PUBLIC_KEY]'); // Remplacez par votre Public Key EmailJS
+      emailjs.init('iastRcgav5mjRyXTD'); // Remplacez par votre Public Key EmailJS
     })();
 
-    const EMAILJS_SERVICE_ID  = '[EMAILJS_SERVICE_ID]';   // Ex: "service_xxxxxx"
-    const EMAILJS_TEMPLATE_ID = '[EMAILJS_TEMPLATE_ID]';  // Ex: "template_xxxxxx"
+    const EMAILJS_SERVICE_ID  = 'service_hu03j3q';   // Ex: "service_xxxxxx"
+    const EMAILJS_TEMPLATE_ID = 'template_xsgm2pp';  // Ex: "template_xxxxxx"
 
 
     // ================================================
