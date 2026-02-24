@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO DE BASE ===== -->
+  <title>Lucas Martin — Coach Sportif Paris | Coaching & Nutrition</title>
+  <meta name="description" content="Lucas Martin, coach sportif certifié à Paris. Coaching individuel, suivi nutrition et programmes en ligne pour perdre du poids, vous remettre en forme et progresser." />
+  <link rel="canonical" href="[URL_CANONIQUE]" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Lucas Martin — Coach Sportif Paris" />
+  <meta property="og:description" content="Coaching individuel, suivi nutrition et programmes en ligne à Paris." />
+  <meta property="og:image" content="[OG_IMAGE_URL]" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="[URL_CANONIQUE]" />
+
+  <!-- ===== GOOGLE FONTS ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- ===== Style ===== -->
+   <link rel="stylesheet" href="style.css">
+
+  <!-- ===== EmailJS ===== -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+
+</head>
+
+<body>
+
+  <!-- ===== BOUTON WHATSAPP STICKY ===== -->
+  <!--
+    PERSONNALISER : Remplacez [NUMERO_WHATSAPP] par  numéro au format international sans + ni espaces
+  -->
+  <a href="https://wa.me/[NUMERO_WHATSAPP]?text=Bonjour%20Lucas%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20votre%20coaching%20!"
+     class="wa-sticky"
+     target="_blank"
+     rel="noopener"
+     aria-label="Contactez Lucas Martin sur WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- ===== HEADER / NAVIGATION ===== -->
+  <header id="header">
+    <div class="container">
+      <nav class="nav">
+
+        <!-- Logo -->
+        <a href="#hero" class="nav-logo" aria-label="Lucas Martin Coach Sportif — Accueil">
+          <!--
+            PERSONNALISER : Remplacez l'élément ci-dessous par votre logo
+            <img src="[LOGO_PNG]" alt="Logo Lucas Martin Coach Sportif" class="nav-logo-img" />
+          -->
+          <div class="nav-logo-img" aria-hidden="true" title="[LOGO_PNG]"></div>
+          <span class="nav-logo-text">Lucas <span>Martin</span></span>
+        </a>
+
+        <!-- Navigation desktop -->
+        <ul class="nav-links">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#prestations">Prestations</a></li>
+          <li><a href="#temoignages">Résultats</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- CTA desktop -->
+        <a href="https://wa.me/[NUMERO_WHATSAPP]?text=Bonjour%20Lucas%2C%20je%20veux%20r%C3%A9server%20une%20s%C3%A9ance%20!"
+           class="btn btn-primary nav-cta"
+           target="_blank" rel="noopener"
+           style="display:inline-flex;">
+          <svg class="icon-wa" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Séance gratuite
+        </a>
+
+        <!-- Burger mobile -->
+        <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Menu mobile drawer -->
+  <nav class="nav-drawer" id="navDrawer" role="navigation" aria-label="Menu mobile">
+    <a href="#about" class="drawer-link">À propos</a>
+    <a href="#prestations" class="drawer-link">Prestations</a>
+    <a href="#temoignages" class="drawer-link">Résultats</a>
+    <a href="#faq" class="drawer-link">FAQ</a>
+    <a href="#contact" class="drawer-link">Contact</a>
+    <a href="https://wa.me/[NUMERO_WHATSAPP]" class="btn btn-primary" target="_blank" rel="noopener">
+      Séance gratuite
+    </a>
+  </nav>
+
+  <!-- ===== SECTION HERO ===== -->
+  <section id="hero" aria-label="Introduction">
+
+    <!-- Fond photo plein écran -->
+    <div class="hero-bg" role="img" aria-label="Lucas Martin, coach sportif en action">
+      <div class="hero-bg-placeholder" aria-hidden="true"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+
+        <!-- Eyebrow -->
+        <div class="hero-eyebrow">
+          <div class="hero-eyebrow-line" aria-hidden="true"></div>
+          <span class="hero-eyebrow-text">Coach Sportif Certifié — Paris & Région Parisienne</span>
+        </div>
+
+        <!-- Titre H1 -->
+        <h1 class="hero-title">
+          Dépassez<br />
+          Vos <span>Limites.</span>
+        </h1>
+        <!--
+          PERSONNALISER [TEXTE_ACCROCHE] :
+          Remplacez la ligne ci-dessus par votre accroche personnalisée si souhaitée.
+          Ex: "Transformez<br />Votre <span>Corps.</span>"
+        -->
+
+        <!-- Sous-titre -->
+        <p class="hero-subtitle">
+          Coaching individuel, suivi nutrition et programmes sur-mesure pour atteindre vos objectifs — perdre du poids, gagner en force ou retrouver la forme.
+        </p>
+        <!--
+          PERSONNALISER [TEXTE_HERO_SUBTITLE] :
+          Adaptez ce texte à votre positionnement réel.
+        -->
+
+        <!-- CTAs -->
+        <div class="hero-ctas">
+          <a href="https://wa.me/[NUMERO_WHATSAPP]?text=Bonjour%20Lucas%2C%20je%20veux%20une%20s%C3%A9ance%20d%27essai%20gratuite%20!"
+             class="btn btn-primary"
+             target="_blank" rel="noopener">
+            <svg class="icon-wa" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Séance d'essai gratuite
+          </a>
+          <a href="#prestations" class="btn btn-outline">Voir les prestations</a>
+        </div>
+
+      </div>
+
+      <!-- Statistiques -->
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-number">+200</div>
+          <div class="hero-stat-label">Clients transformés</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-number">15+</div>
+          <div class="hero-stat-label">Ans d'expérience</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-number">4270+</div>
+          <div class="hero-stat-label">Séances réalisées</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Indicateur de scroll -->
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="hero-scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+
+  </section>
+
+  <!-- ===== SECTION À PROPOS ===== -->
+  <section id="about" aria-label="À propos de Lucas Martin">
+    <div class="container">
+
+      <div class="about-grid">
+
+        <!-- Image profil -->
+        <div class="about-image-wrap ">
+          <div class="about-image-frame">
+            <div class="about-image-inner">
+              <img src="profil.jpg" alt="Lucas Martin, coach sportif certifié à Paris" />
+            </div>
+          </div>
+          <div class="about-badge">
+            <strong>15</strong>
+            ans<br />d'expérience
+          </div>
+        </div>
+
+        <!-- Contenu texte -->
+        <div class="about-content ">
+          <span class="section-label">À propos</span>
+          <h2 class="section-title">Je suis <span>Lucas</span><br />Martin</h2>
+
+          <p class="about-text">
+            Passionné de sport depuis toujours, j'ai décidé d'en faire ma profession pour aider les autres à atteindre leurs objectifs. Issu d'une formation en BPJEPS, j'exerce à Paris et dans toute la région parisienne depuis 15 ans.
+          </p>
+          <p class="about-text">
+            Ma philosophie : Je crois fermement que chaque corps est unique et que la progression passe par un suivi personnalisé, de la régularité et un état d'esprit positif.
+          </p>
+          <div class="about-certif">
+            <span class="certif-tag">BPJEPS AF</span>
+            <span class="certif-tag">Nutrition du Sportif (INSEP)</span>
+            <span class="certif-tag">Certified Kettlebell Trainer</span>
+          </div>
+
+          <div class="about-values">
+            <div class="about-value">
+              <div class="about-value-dot" aria-hidden="true"></div>
+              <span class="about-value-text">Programmes 100% personnalisés</span>
+            </div>
+            <div class="about-value">
+              <div class="about-value-dot" aria-hidden="true"></div>
+              <span class="about-value-text">Suivi régulier & ajustements</span>
+            </div>
+            <div class="about-value">
+              <div class="about-value-dot" aria-hidden="true"></div>
+              <span class="about-value-text">Approche nutrition intégrée</span>
+            </div>
+            <div class="about-value">
+              <div class="about-value-dot" aria-hidden="true"></div>
+              <span class="about-value-text">Résultats mesurables</span>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary">Travailler avec moi</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION PRESTATIONS & TARIFS ===== -->
+  <section id="prestations" aria-label="Prestations et tarifs">
+    <div class="container">
+
+      <div class="section-header ">
+        <span class="section-label">Prestations & Tarifs</span>
+        <h2 class="section-title">Choisissez votre<br /><span>programme</span></h2>
+      </div>
+
+      <div class="prestations-grid">
+
+        <!-- Carte 1 — Coaching individuel -->
+        <article class="presta-card  delay-1" aria-label="Coaching individuel">
+          <div class="presta-number" aria-hidden="true">01</div>
+          <div class="presta-icon" aria-hidden="true">💪</div>
+          <h3 class="presta-title">Coaching Individuel</h3>
+          <p class="presta-desc">
+            Séances en salle ou en extérieur, 100% personnalisées selon vos objectifs, votre niveau et vos contraintes.
+            <!--
+              PERSONNALISER [DESC_COACHING_INDIVIDUEL] :
+              Détaillez le lieu, la durée des séances, le type d'exercices proposés.
+            -->
+          </p>
+          <ul class="presta-features">
+            <li class="presta-feature">Bilan initial & évaluation physique</li>
+            <li class="presta-feature">Programme sur-mesure évolutif</li>
+            <li class="presta-feature">Suivi hebdomadaire des progrès</li>
+          </ul>
+          <div class="presta-price">
+            <span class="presta-price-amount">80€</span>
+            <span class="presta-price-unit">/ séance</span>
+          </div>
+          <a href="https://wa.me/[NUMERO_WHATSAPP]?text=Bonjour%2C%20je%20veux%20du%20coaching%20individuel%20!"
+             class="btn btn-primary" target="_blank" rel="noopener">
+            Réserver
+          </a>
+        </article>
+
+        <!-- Carte 2 — Suivi Nutrition -->
+        <article class="presta-card  delay-2" aria-label="Suivi nutrition">
+          <div class="presta-number" aria-hidden="true">02</div>
+          <div class="presta-icon" aria-hidden="true">🥗</div>
+          <h3 class="presta-title">Suivi Nutrition</h3>
+          <p class="presta-desc">
+            Un plan alimentaire adapté à vos objectifs sportifs et à votre mode de vie, sans frustration ni régimes extrêmes.
+          </p>
+          <ul class="presta-features">
+            <li class="presta-feature">Analyse de vos habitudes alimentaires</li>
+            <li class="presta-feature">Plan nutritionnel hebdomadaire</li>
+            <li class="presta-feature">Recettes & listes de courses</li>
+          </ul>
+          <div class="presta-price">
+            <span class="presta-price-amount">110€</span>
+            <span class="presta-price-unit">/ mois</span>
+          </div>
+          <a href="https://wa.me/[NUMERO_WHATSAPP]?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20suivi%20nutrition%20!"
+             class="btn btn-primary" target="_blank" rel="noopener">
+            Réserver
+          </a>
+        </article>
+
+        <!-- Carte 3 — Programme en ligne -->
+        <article class="presta-card  delay-3" aria-label="Programme en ligne">
+          <div class="presta-number" aria-hidden="true">03</div>
+          <div class="presta-icon" aria-hidden="true">📱</div>
+          <h3 class="presta-title">Programme en Ligne</h3>
+          <p class="presta-desc">
+            Entraînez-vous où vous voulez, quand vous voulez avec un programme complet disponible sur votre téléphone.
+          </p>
+          <ul class="presta-features">
+            <li class="presta-feature">Programme personnalisé 4–6 semaines</li>
+            <li class="presta-feature">Vidéos explicatives des exercices</li>
+            <li class="presta-feature">Suivi via messagerie</li>
+          </ul>
+          <div class="presta-price">
+            <span class="presta-price-amount">49€</span>
+            <span class="presta-price-unit">/ programme</span>
+          </div>
+          <a href="https://wa.me/[NUMERO_WHATSAPP]?text=Bonjour%2C%20je%20veux%20un%20programme%20en%20ligne%20!"
+             class="btn btn-primary" target="_blank" rel="noopener">
+            Commander
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION TÉMOIGNAGES ===== -->
+  <section id="temoignages" aria-label="Témoignages clients">
+    <div class="container">
+
+      <div class="section-header ">
+        <span class="section-label">Témoignages</span>
+        <h2 class="section-title">Leurs <span>résultats</span><br />parlent d'eux-mêmes</h2>
+      </div>
+
+      <div class="temoignages-grid">
+
+        <!-- Témoignage 1 -->
+        <article class="temoignage-card  delay-1" aria-label="Témoignage de [NOM_CLIENT_1]">
+          <div class="temoignage-quote" aria-hidden="true">"</div>
+          <blockquote class="temoignage-text">
+            "En 4 mois avec Lucas, j'ai perdu 11 kg et retrouvé confiance en moi. Il est à l'écoute, exigeant mais jamais décourageant."
+          </blockquote>
+          <div class="temoignage-result" aria-label="Résultat obtenu">
+            Perte de poids
+          </div>
+          <div class="temoignage-author">
+            <div class="temoignage-avatar">
+              <span class="img-placeholder" style="font-size:0.6rem">[PHOTO]</span>
+            </div>
+            <div>
+              <div class="temoignage-name">Sophie R</div>
+              <div class="temoignage-info">34 ans</div>
+              <div class="stars" aria-label="5 étoiles">★★★★★</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Témoignage 2 -->
+        <article class="temoignage-card  delay-2" aria-label="Témoignage de [NOM_CLIENT_2]">
+          <div class="temoignage-quote" aria-hidden="true">"</div>
+          <blockquote class="temoignage-text">
+            "Je coure mon premier semi-marathon en mai grâce à son programmen en ligne. Suivi sérieux, Plans clairs, top !"
+          </blockquote>
+          <div class="temoignage-result">Préparation course à pied</div>
+          <div class="temoignage-author">
+            <div class="temoignage-avatar">
+              <span class="img-placeholder" style="font-size:0.6rem"></span>
+            </div>
+            <div>
+              <div class="temoignage-name">Thomas B</div>
+              <div class="temoignage-info">28</div>
+              <div class="stars" aria-label="5 étoiles">★★★★★</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION FAQ ===== -->
+  <section id="faq" aria-label="Questions fréquentes">
+    <div class="container">
+
+      <div>
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Questions <span>fréquentes</span></h2>
+      </div>
+
+      <div class="faq-grid">
+
+        <!-- Accordéon FAQ -->
+        <div class="faq-list" role="list">
+
+          <!-- Item FAQ 1 -->
+          <div class="faq-item " role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              Comment se déroule la première séance ?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                La première séance est une séance de bilan. Nous faisons connaissance, j'évalue votre condition physique actuelle, vos habitudes et nous définissons ensemble vos objectifs. Elle est offerte et sans engagement.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item FAQ 2 -->
+          <div class="faq-item  delay-1" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              Où se déroulent les séances de coaching ?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Les séances peuvent avoir lieu dans votre salle de sport, en extérieur (parcs de Paris), à domicile ou dans une salle partenaire. Tout dépend de vos préférences et de votre localisation.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item FAQ 3 -->
+          <div class="faq-item  delay-2" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              À quelle fréquence dois-je m'entraîner ?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Pour des résultats optimaux, je recommande 2 à 3 séances par semaine. Mais chaque situation est unique : on adapte la fréquence à votre emploi du temps et à vos objectifs lors du bilan initial.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item FAQ 4 -->
+          <div class="faq-item  delay-3" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              Proposez-vous des packs de séances ?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+              Oui, des packs de 5, 10 ou 20 séances sont disponibles avec des tarifs dégressifs. Contactez-moi pour obtenir les tarifs détaillés adaptés à votre projet.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item FAQ 5 -->
+          <div class="faq-item  delay-4" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              Le suivi nutrition est-il inclus dans le coaching ?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Le suivi nutrition est une prestation séparée que vous pouvez combiner avec le coaching individuel. Cette approche globale donne les meilleurs résultats. Des packs coaching + nutrition sont disponibles.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item FAQ 6 -->
+          <div class="faq-item " role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              Puis-je annuler ou reporter une séance ?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Les annulations doivent être signalées au minimum 24 heures à l'avance. Passé ce délai, la séance est décomptée. Je fais preuve de flexibilité pour les cas exceptionnels.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Aside CTA -->
+        <div class="faq-aside">
+          <div class="faq-cta-box">
+            <h3>Une question ?</h3>
+            <p>
+              Vous n'avez pas trouvé la réponse que vous cherchiez ? Contactez-moi directement sur WhatsApp, je réponds en général en moins d'une heure.
+            </p>
+            <a href="https://wa.me/[NUMERO_WHATSAPP]?text=Bonjour%20Lucas%2C%20j%27ai%20une%20question%20sur%20votre%20coaching%20!"
+               class="btn-white"
+               target="_blank" rel="noopener">
+              <svg style="width:18px;height:18px;fill:currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION CONTACT ===== -->
+  <section id="contact" aria-label="Contact">
+    <div class="container">
+
+      <div class="section-header ">
+        <span class="section-label">Contact</span>
+        <h2 class="section-title">Commençons <span>ensemble</span></h2>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Infos de contact -->
+        <div class="contact-info ">
+          <p class="contact-intro">
+            Prêt(e) à franchir le cap ? Contactez-moi via WhatsApp pour une réponse rapide, ou remplissez le formulaire ci-contre. La première consultation est offerte et sans engagement.
+          </p>
+
+          <div class="contact-channels">
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/[NUMERO_WHATSAPP]"
+               class="contact-channel"
+               target="_blank" rel="noopener"
+               aria-label="Contacter Lucas sur WhatsApp">
+              <div class="contact-channel-icon" style="background:#25D366" aria-hidden="true">
+                <svg style="width:22px;height:22px;fill:#fff" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </div>
+              <div>
+                <div class="contact-channel-label">WhatsApp</div>
+                <div class="contact-channel-value">+33 6 58 23 41 97 </div>
+              </div>
+            </a>
+
+            <!-- Instagram -->
+            <a href="[INSTAGRAM_URL]"
+               class="contact-channel"
+               target="_blank" rel="noopener"
+               aria-label="Instagram de Lucas Martin">
+              <div class="contact-channel-icon" style="background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045)" aria-hidden="true">
+                <svg style="width:22px;height:22px;fill:#fff" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              </div>
+              <div>
+                <div class="contact-channel-label">Instagram</div>
+                <div class="contact-channel-value">@lucasmartincoach</div>
+              </div>
+            </a>
+
+            <!-- YouTube -->
+            <a href="[YOUTUBE_URL]"
+               class="contact-channel"
+               target="_blank" rel="noopener"
+               aria-label="Chaîne YouTube de Lucas Martin">
+              <div class="contact-channel-icon" style="background:#FF0000" aria-hidden="true">
+                <svg style="width:22px;height:22px;fill:#fff" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </div>
+              <div>
+                <div class="contact-channel-label">YouTube</div>
+                <div class="contact-channel-value">Lucas Martin Coach</div>
+              </div>
+            </a>
+
+          </div>
+
+          <!-- Réseaux sociaux rapides -->
+          <div class="contact-socials">
+            <a href="[INSTAGRAM_URL]" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg style="width:18px;height:18px;fill:#fff" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="[YOUTUBE_URL]" class="social-link" target="_blank" rel="noopener" aria-label="YouTube">
+              <svg style="width:18px;height:18px;fill:#fff" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="https://wa.me/[NUMERO_WHATSAPP]" class="social-link" target="_blank" rel="noopener" aria-label="WhatsApp" style="background:#25D366; border-color:#25D366">
+              <svg style="width:18px;height:18px;fill:#fff" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Formulaire EmailJS -->
+        <div class="contact-form ">
+          <form id="contactForm" novalidate>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="prenom">Prénom *</label>
+                <input type="text" id="prenom" name="prenom" class="form-input" placeholder="Votre prénom" required autocomplete="given-name" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="nom">Nom *</label>
+                <input type="text" id="nom" name="nom" class="form-input" placeholder="Votre nom" required autocomplete="family-name" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="email">Email *</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="votre@email.com" required autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="telephone">Téléphone</label>
+                <input type="tel" id="telephone" name="telephone" class="form-input" placeholder="+33 6 00 00 00 00" autocomplete="tel" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="objectif">Votre objectif *</label>
+              <select id="objectif" name="objectif" class="form-select" required>
+                <option value="" disabled selected>Sélectionnez votre objectif</option>
+                <option value="perte-poids">Perte de poids</option>
+                <option value="prise-muscle">Prise de muscle</option>
+                <option value="remise-forme">Remise en forme</option>
+                <option value="performance">Performance sportive</option>
+                <option value="nutrition">Suivi nutrition seul</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Message *</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="Décrivez brièvement votre situation et vos objectifs..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="submitBtn" style="width:100%; justify-content:center;">
+              <span id="submitText">Envoyer ma demande</span>
+            </button>
+
+            <div id="form-status" role="alert" aria-live="polite"></div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="nav-logo" style="margin-bottom:0">
+            <div class="nav-logo-img" style="width:36px;height:36px" aria-hidden="true"></div>
+            <span class="nav-logo-text">Lucas <span>Martin</span></span>
+          </div>
+          <p>Coach sportif certifié à Paris et en région parisienne. Transformez votre corps, dépassez vos limites.</p>
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#prestations">Prestations</a></li>
+            <li><a href="#temoignages">Témoignages</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact rapide -->
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <a href="https://wa.me/[NUMERO_WHATSAPP]" target="_blank" rel="noopener">WhatsApp</a>
+            </li>
+            <li>
+              <a href="[INSTAGRAM_URL]" target="_blank" rel="noopener">Instagram</a>
+            </li>
+            <li>
+              <a href="[YOUTUBE_URL]" target="_blank" rel="noopener">YouTube</a>
+            </li>
+            <li>
+              <a href="[MENTIONS_LEGALES_URL]">Mentions légales</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="footer-year"></span> Lucas Martin — Coach Sportif. Tous droits réservés.</p>
+        <p>Fait avec <span>♥</span> à Paris</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ===== JAVASCRIPT ===== -->
+<script src="script.js"></script>
+
+  <!--
+  ================================================================
+   LISTE COMPLÈTE DES ÉLÉMENTS À PERSONNALISER AVANT MISE EN LIGNE
+  ================================================================
+
+  ── 📸 IMAGES ──────────────────────────────────────────────────
+  [PHOTO_TEMOIGNAGE_1/2/3] → Photos des clients dans les témoignages
+  [LOGO_PNG]            → URL du logo PNG de Lucas Martin (header + footer)
+                          Remplacez la div .nav-logo-img par <img src="..." ... />
+  [OG_IMAGE_URL]        → URL absolue d'une image optimisée pour les réseaux sociaux (1200×630px)
+
+  ── 🔗 LIENS & CONTACTS ────────────────────────────────────────
+  [NUMERO_WHATSAPP]     → Numéro sans + ni espaces : ex "33612345678"
+  [NUMERO_AFFICHE]      → Numéro formaté pour affichage : ex "+33 6 12 34 56 78"
+  [INSTAGRAM_URL]       → URL complète : ex "https://www.instagram.com/lucasmartincoach"
+  [INSTAGRAM_HANDLE]    → Handle sans @ : ex "lucasmartincoach"
+  [YOUTUBE_URL]         → URL complète de la chaîne YouTube
+  [YOUTUBE_CHANNEL_NAME]→ Nom de la chaîne YouTube
+  [URL_CANONIQUE]       → URL complète du site : ex "https://www.lucasmartincoach.fr"
+  [MENTIONS_LEGALES_URL]→ URL de la page mentions légales (à créer)
+
+  ── 🔑 CLÉS API ────────────────────────────────────────────────
+  [EMAILJS_PUBLIC_KEY]  → Clé publique EmailJS (onglet Account > API Keys)
+  [EMAILJS_SERVICE_ID]  → ID du service email EmailJS (ex: "service_abc123")
+  [EMAILJS_TEMPLATE_ID] → ID du template EmailJS (ex: "template_xyz789")
+                          Variables à utiliser dans votre template EmailJS :
+                          {{from_prenom}}, {{from_nom}}, {{from_email}},
+                          {{from_tel}}, {{objectif}}, {{message}}
+
+  ── ⚙️ CONFIGURATION EMAILJS ───────────────────────────────────
+  1. Créez un compte gratuit sur https://www.emailjs.com
+  2. "Add New Service" → connectez votre Gmail/Outlook
+  3. "Email Templates" → créez un template avec les variables ci-dessus
+  4. "Account" > "API Keys" → copiez votre Public Key
+  5. Renseignez les 3 constantes dans la balise <script>
+
+  ── 🗑️ NETTOYAGE AVANT MISE EN LIGNE ───────────────────────────
+  - Supprimez toutes les div .hero-bg-placeholder et .img-placeholder
+    après avoir ajouté vos vraies images
+  - Supprimez ce bloc de commentaires
+  - Ajoutez Google Analytics / Pixel Meta si nécessaire
+  - Configurez le fichier robots.txt et sitemap.xml
+  - Vérifiez les balises meta title/description (uniques et pertinentes)
+  - Testez le formulaire EmailJS en conditions réelles avant lancement
+  - Validez le HTML sur https://validator.w3.org
+  - Testez la vitesse sur https://pagespeed.web.dev
+  ================================================================
+  -->
+
+</body>
+</html>
